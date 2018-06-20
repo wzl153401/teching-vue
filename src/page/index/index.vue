@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-      index
+      Index hello woshi 619
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 <style>
 .header {
     display: flex;
-    height: 0.42rem;
+    height: 0.86rem;
     background:pink;
 }
 </style>
