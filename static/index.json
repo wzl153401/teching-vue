@@ -1,0 +1,104 @@
+{
+   "ret":true,
+   "data":{
+       "swiper": [
+                    {
+                        "id":"0001",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1803/98/0a2e0bd8eb0c0802.png_750x200_0a34d4a8.png",
+                        "title":"石林峡",
+                        "link":""
+                    } ,
+                    {
+                        "id":"0002",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+                        "title":"石林峡",
+                        "link":""
+                    } ,
+                    {
+                        "id":"0003",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1806/1c/4847ea66072c7b02.jpg_750x200_c32457fb.jpg",
+                        "title":"石林峡",
+                        "link":""
+                    } 
+                 ],
+        "icons": [
+                    {
+                        "id":"0001",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                        "title":"石林峡",
+                        "link":""
+                    } ,
+                    {
+                        "id":"0002",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                        "title":"石林峡",
+                        "link":""
+                    } ,
+                    {
+                        "id":"0003",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                        "title":"石林峡",
+                        "link":""
+                    } 
+                    ,
+                    {
+                        "id":"0004",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                        "title":"石林峡",
+                        "link":""
+                    } 
+                    ,
+                    {
+                        "id":"0005",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                        "title":"石林峡",
+                        "link":""
+                    } 
+                    ,
+                    {
+                        "id":"0006",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                        "title":"石林峡",
+                        "link":""
+                    } 
+                    ,
+                    {
+                        "id":"0007",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                        "title":"石林峡",
+                        "link":""
+                    } 
+                    ,
+                    {
+                        "id":"0008",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                        "title":"石林峡",
+                        "link":""
+                    } 
+                    ,
+                    {
+                        "id":"0009",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                        "title":"石林峡",
+                        "link":""
+                    } 
+                    ,
+                    {
+                        "id":"0010",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                        "title":"石林峡",
+                        "link":""
+                    } 
+                    ,
+                    {
+                        "id":"0011",
+                        "imgurl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                        "title":"石林峡",
+                        "link":""
+                    } 
+
+         ] 
+       
+    }
+
+}
