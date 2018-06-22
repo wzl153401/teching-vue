@@ -7,55 +7,41 @@
       <div class="serach"></div>
       <div class="city">北京<em class="iconfont">&#xe601;</em></div>
   </div>
-  <swiper :options="swiperOption">
-    <!-- slides -->
-    <swiper-slide v-for="item in swipers" :key="item.id">
-      <div  class="swiperbox">
-        <img class="imgurl" :src="item.imgurl" alt="" >
-      </div>
-      
-   </swiper-slide>
-     <div class="swiper-pagination"  slot="pagination"></div>
-  </swiper>
 
+<!-- banner -->
 
-  <swiper  :options="swiperOption2">
-      <swiper-slide v-for="(iteminfo,index) in pages" :key="index">
-        <div class="icon-wrapper">
-           <div v-for="item in iteminfo" :key="item.id" class="icon-item">
-                <div class="icon-img-con">
-                  <img :src="item.imgurl" class="icon-img">
-                </div>
-                <p class="img-title">{{item.title}}</p>
-           </div>
-        </div>
-        
-     </swiper-slide>
-
-  </swiper>
+  <banner :swipers="swipers"></banner>
+  <!-- icon-swiper -->
+  <icon-swiper  :pages="pages"></icon-swiper>
    
+   <!-- ul subject -->
+     <ul class="map-listitem">
+      <li>定位失败</li>
+      <li>玩水季</li>
+    </ul>
+    <ul class="subject">
+      <li></li>
+    </ul>
+
 </div>
   
 </template>
 
 <script>
+
+  import banner from './banner.vue'
+  import iconSwiper from './iconSwiper'
+
 export default {
   name: 'Index',
+  components:{
+    banner,
+    iconSwiper
+  },
   data() {
       return {
         swipers:[],
-        icons:[],
-        swiperOption: {
-         autoplay:3000,
-          loop:true,
-          pagination:'.swiper-pagination'
-          // some swiper options/callbacks
-          // 所有的参数同 swiper 官方 api 参数
-          // ...
-        },
-        swiperOption2:{
-           autoplay:false
-        }
+        icons:[]
       }
     },
     methods:{
@@ -76,7 +62,6 @@ export default {
         const pages =[]
         this.icons.forEach((value,index)=>{
         let page = Math.floor( index / 8 )
-        
             if(!pages[page]){
               //如果pages【0】和pages【1】的时候没有数组，就创建输出，因为循环出来有pages【0】和pages【1】所以会创建两个数组
                 pages[page] = []
@@ -96,6 +81,9 @@ export default {
 </script>
 
 <style>
+.index{
+  background: #f5f5f5;
+}
 .header {
     display: flex;
     height: 0.86rem;
@@ -120,39 +108,17 @@ export default {
   width: 1.14rem;
   height: 100%;
   text-align: center;
+}
 
-}
-.swiperbox{
+
+.subject{
   width: 100%;
-  height:0;
-  padding-bottom:  26.6%;
-  overflow:hidden;
+  margin-top:1px;
+  height: 100px;
+  background:pink;
 }
-.imgurl{
-  width: 100%;
+.subject li{
+ font-size:12px;
 }
-.icon-wrapper{
- 
-}
-.icon-item{
-  box-sizing:border-box;
-  float:left;
-  width:25%;
-  padding:0.4rem;
-}
-.icon-img-con{
-  width: 100%;
-  height:0;
-  padding-bottom: 100%;
-}
-.icon-img{
-  width: 100%;
-}
-.img-title{
-  text-align: center;
-  width: 100%;
-  overflow:hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+
 </style>
