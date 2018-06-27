@@ -12,10 +12,13 @@ Vue.config.productionTip = false
 Vue.use(VueSwiper)
 Vue.use(VueResource);
 
+import store from './store/index.js'
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

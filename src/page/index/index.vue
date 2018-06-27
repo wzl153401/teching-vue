@@ -5,7 +5,7 @@
           &#xe600;
       </div>
       <div class="serach"></div>
-      <div class="city">北京<em class="iconfont">&#xe601;</em></div>
+      <div class="city">{{doubelCity}}<em class="iconfont">&#xe601;</em></div>
   </div>
 
 <!-- banner -->
@@ -31,7 +31,8 @@
 
   import banner from './banner.vue'
   import iconSwiper from './iconSwiper'
-
+  import { mapState,mapGetters } from 'vuex'
+  
 export default {
   name: 'Index',
   components:{
@@ -58,6 +59,7 @@ export default {
       }
     },
     computed:{
+      
       pages(){
         const pages =[]
         this.icons.forEach((value,index)=>{
@@ -71,7 +73,20 @@ export default {
         })
        
       return pages
-      }
+      },
+      // city(){
+      //   return this.$store.state.city
+      // }
+      // ...mapState(['city'])
+      // 
+
+      // doubelCity(){
+      //   return this.$store.getters.doubelCity
+      // }
+
+      ...mapGetters(['doubelCity'])
+
+     
     },
     created (){
       this.getbanner()
